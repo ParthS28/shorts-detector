@@ -112,7 +112,7 @@ class CustomDataset(utils.Dataset):
         # }
         # We mostly care about the x and y coordinates of each region
         annotations1 = json.load(open(os.path.join(dataset_dir, "via_region_data.json")))
-        # print(annotations1)
+        print(annotations1)
         annotations1 = annotations1['_via_img_metadata']
         print(annotations1)
         annotations = list(annotations1.values())  # don't need the dict keys
